@@ -3,6 +3,10 @@ sidebar_position: 3
 title: 使用示例
 ---
 
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # 使用示例
 
 * <https://hitokoto-api.jerry.ink/> （从7种分类中随机抽取）
@@ -25,12 +29,17 @@ title: 使用示例
 ```
 那我们可以在 `<script></script>` 中 或者 `.js` 文件中使用我们的接口：
 
-:::code-group
+<BrowserWindow>
+<Tabs>
+<TabItem value='interfacce_selector' label='接口选择器'>
 
 ```html [接口选择器]
 <!-- 本例不能添加链接内容，放在此处只是因为此接口比较方便，也许能够解决大部分的需求-->
 <script src="https://hitokoto-api.jerry.ink/?encode=js&select=%23hitokoto" defer></script>
 ```
+
+</TabItem>
+<TabItem value='fetch_api' label='Fatch API'>
 
 ```js [Fetch API]
 // 请注意此 Web API 的兼容性，
@@ -46,6 +55,9 @@ fetch('https://hitokoto-api.jerry.ink/')
   .catch(console.error)
 ```
 
+</TabItem>
+<TabItem value='axios' label='Axios'>
+
 ```js [Axios]
 axios.get('https://hitokoto-api.jerry.ink/')
   .then(({ data }) => {
@@ -55,6 +67,9 @@ axios.get('https://hitokoto-api.jerry.ink/')
   })
   .catch(console.error)
 ```
+
+</TabItem>
+<TabItem value='jquery' label='jQuery'>
 
 ```js [jQuery]
 // 如果你的站点使用了 jQuery,
@@ -78,6 +93,9 @@ $.ajax({
 })
 ```
 
+</TabItem>
+<TabItem value='xmlhttprequest' label='XMLHttpRequest'>
+
 ```js [XMLHttpRequest]
 var xhr = new XMLHttpRequest();
 xhr.open('get', 'https://hitokoto-api.jerry.ink/');
@@ -91,7 +109,10 @@ xhr.onreadystatechange = function () {
 }
 xhr.send();
 ```
-:::
+
+</TabItem>
+</Tabs>
+</BrowserWindow>
 
 我们之所以推荐基于 `Promise` 的 API，是因为自 ES2017(ES8) 引入 `async/await` 后，您可以类似这样使用：
 
