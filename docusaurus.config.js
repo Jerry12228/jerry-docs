@@ -1,5 +1,5 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+// Note: 
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
@@ -90,9 +90,15 @@ const config = {
         items: [
           {
             type: 'doc',
+            docId: 'jerry-mc-skin/mc-skin-intro',
+            positionL: 'left',
+            label: 'Jerry - MC皮肤站',
+          },
+          {
+            type: 'doc',
             docId: 'hitokoto-api/hitokoto-api',
             position: 'left',
-            label: '一言语句接口',
+            label: '一言 API',
           },
           {
             type: 'doc',
@@ -118,8 +124,12 @@ const config = {
             title: 'Docs',
             items: [
               {
+                label: 'Jerry - M皮肤站',
+                to: '/docs/jerry-mc-skin/mc-skin-intro',
+              },
+              {
                 label: '一言语句接口',
-                to: '/docs/hitokoto-api'
+                to: '/docs/hitokoto-api',
               },
               {
                 label: 'Jerry-MC服务器',
@@ -141,8 +151,12 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: '关于',
             items: [
+              {
+                label: '联系方式',
+                href: '/contact',
+              },
               {
                 label: 'Jerry - Blog',
                 href: 'https://blog.jerry.ink/',
