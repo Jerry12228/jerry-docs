@@ -163,7 +163,7 @@ const config = {
               },
               {
                 label: 'Jerry MC服KOOK',
-                to: 'docs/Jerry-MC-Server/about-server'
+                to: 'docs/Jerry-MC-Server/Jerry-MC-Server'
               },
             ],
           },
