@@ -13,7 +13,8 @@ const config = {
   url: 'https://docs.jerry.ink/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
+  onDuplicateRoutes: 'throw',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
@@ -52,6 +53,18 @@ const config = {
   ],
 
   plugins: [
+    [
+      'ideal-image',
+      /** @type {import('@docusaurus/plugin-ideal-image').PluginOptions} */
+      ({
+        quality: 70,
+        max: 1030,
+        min: 640,
+        steps: 2,
+        // Use false to debug, but it incurs huge perf costs
+        disableInDev: false,
+      }),
+    ],
   ],
 
   themes: [
@@ -147,6 +160,10 @@ const config = {
               {
                 label: 'Jerry MC服交流群',
                 href: 'https://jq.qq.com/?_wv=1027&k=6K1nn4ud',
+              },
+              {
+                label: 'Jerry MC服KOOK',
+                to: 'docs/Jerry-MC-Server/about-server'
               },
             ],
           },
