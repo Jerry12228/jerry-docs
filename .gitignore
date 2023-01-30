@@ -4,8 +4,9 @@
 # Production
 /build
 
-# tmp
+# self
 /tmp
+*.code-workspace
 
 # Generated files
 .docusaurus

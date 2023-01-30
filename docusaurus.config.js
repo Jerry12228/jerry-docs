@@ -97,8 +97,8 @@ const config = {
         title: 'Jerry - Docs',
         logo: {
           alt: 'logo',
-          src: 'img/logo.svg',
-          srcDark: 'img/logo-stroke-white.svg',
+          src: 'img/logo-stroke-white.svg',
+          // srcDark: 'img/logo-stroke-white.svg',
         },
         items: [
           {
