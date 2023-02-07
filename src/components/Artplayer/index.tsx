@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import Artplayer from 'artplayer';
 import React from 'react';
 
-export default function Player({ option, getInstance, ...rest }) {
+export default function ArtPlayer({ option, getInstance, ...rest }) {
     const artRef = useRef();
 
     useEffect(() => {
