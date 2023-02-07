@@ -39,6 +39,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [math],
           rehypePlugins: [katex],
+          // "Artplayer": ["artplayer"],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -163,7 +164,7 @@ const config = {
               },
               {
                 label: 'Jerry MC服KOOK',
-                to: 'docs/Jerry-MC-Server/Jerry-MC-Server'
+                to: 'docs/Jerry-MC-Server/Jerry-MC-Server#联系方式'
               },
             ],
           },
@@ -187,6 +188,35 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Jerry - Docs, Inc. 由 Docusaurus 强力驱动`,
       },
+      headTags: [
+        {
+          tagName: 'script',
+          attributes: {
+            innerHTML: `
+              var _paq = window._paq = window._paq || [];
+              /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+              _paq.push(['trackPageView']);
+              _paq.push(['enableLinkTracking']);
+              (function() {
+                var u="https://tongji.jerry.ink/";
+                _paq.push(['setTrackerUrl', u+'matomo.php']);
+                _paq.push(['setSiteId', '10']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+              })();
+            `
+          },
+        },
+        // {
+        //   tagName: 'img',
+        //   attributes: {
+        //     referrerpolicy: "no-referrer-when-downgrade",
+        //     src: "https://tongji.jerry.ink/matomo.php?idsite=10&amp;rec=1",
+        //     style: "border:0",
+        //     alt: "",
+        //   },
+        // },
+      ],
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
