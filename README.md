@@ -1,8 +1,8 @@
-# Website
+# Jerry - Docs
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+本文档使用 [Docusaurus](https://docusaurus.io/) 构建
 
-要为此文档做贡献，请确保您可以基本熟练编写Markdown，会安装node，会使用git
+要为此文档做贡献，请确保(注意，这只是底线，可能还需要更多知识)您可以基本熟练编写Markdown，会安装node，会使用git
 请您先fork项目到您的仓库，更改后向master分支提交pr
 
 ### 安装
