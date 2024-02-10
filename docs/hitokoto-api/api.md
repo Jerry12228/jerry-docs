@@ -81,7 +81,7 @@ title: 语句接口
 | creator     | 添加者                                                      |
 | creator_uid | 添加者用户标识                                                  |
 | reviewer    | 审核员标识                                                    |
-| uuid        | 一言唯一标识；可以链接到 <https://hitokoto.cn?uuid=[uuid]> 查看这个一言的完整信息 |
+| uuid        | 一言唯一标识；可以链接到 (https://hitokoto.cn?uuid=[uuid]) 查看这个一言的完整信息 |
 | commit_from | 提交方式                                                     |
 | created_at  | 添加时间                                                     |
 | length      | 句子长度                                                     |
