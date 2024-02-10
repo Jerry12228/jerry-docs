@@ -8,7 +8,7 @@ title: 简介
 
 # 简介
 本API使用一言语句接口开源项目部署，使用一言官方语言包。  
-接口地址：<https://hitokoto-api.jerry.ink/>
+接口地址：(https://hitokoto-api.jerry.ink/)
 
 服务器位于新加坡，请斟酌使用。
 
