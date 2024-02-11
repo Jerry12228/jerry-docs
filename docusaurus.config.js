@@ -165,7 +165,7 @@ const config = {
               },
               {
                 label: 'Jerry MC服KOOK',
-                to: 'docs/Jerry-MC-Server/Jerry-MC-Server#联系方式'
+                to: 'docs/Jerry-MC-Server/Jerry-MC-Server#社区'
               },
             ],
           },
