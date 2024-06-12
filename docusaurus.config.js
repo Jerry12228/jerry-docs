@@ -119,7 +119,7 @@ const config = {
             type: 'doc',
             docId: 'Jerry-MC-Server/jerry-mc-server',
             position: 'left',
-            label: 'Jerry MC服',
+            label: 'Scapegoat',
           },
           {
             type: 'search',
