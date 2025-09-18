@@ -105,21 +105,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'jerry-mc-skin/mc-skin-intro',
-            positionL: 'left',
-            label: 'Jerry - MC皮肤站',
-          },
-          {
-            type: 'doc',
-            docId: 'hitokoto-api/hitokoto-api',
+            docId: 'OpenVPN/openvpn-intro',
             position: 'left',
-            label: '一言 API',
-          },
-          {
-            type: 'doc',
-            docId: 'Jerry-MC-Server/jerry-mc-server',
-            position: 'left',
-            label: 'Scapegoat',
+            label: 'OpenVPN',
           },
           {
             type: 'search',
@@ -138,52 +126,19 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {
-                label: 'Jerry - M皮肤站',
-                to: '/docs/jerry-mc-skin/mc-skin-intro',
-              },
-              {
-                label: '一言语句接口',
-                to: '/docs/hitokoto-api',
-              },
-              {
-                label: 'Jerry-MC服务器',
-                to: '/docs/Jerry-MC-Server/Jerry-MC-Server',
-              },
+              
             ],
           },
           {
             title: '社区',
             items: [
-              {
-                label: '论坛',
-                href: 'https://bbs.jerry.ink/',
-              },
-              {
-                label: 'Jerry MC服交流群',
-                href: 'https://jq.qq.com/?_wv=1027&k=6K1nn4ud',
-              },
-              {
-                label: 'Jerry MC服KOOK',
-                to: 'docs/Jerry-MC-Server/Jerry-MC-Server#社区'
-              },
+              
             ],
           },
           {
             title: '关于',
             items: [
-              {
-                label: '联系方式',
-                href: '/contact',
-              },
-              {
-                label: 'Jerry - Blog',
-                href: 'https://blog.jerry.ink/',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/Jerry12228/',
-              },
+              
             ],
           },
         ],
